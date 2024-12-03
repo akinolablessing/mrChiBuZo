@@ -1,5 +1,5 @@
 // I changed the code because is not giving me the result i want sir
-// sum/grade[1].length
+
 import java.util.Scanner;
 import java.util.Arrays;
 public class StudentGrade{
@@ -18,6 +18,7 @@ System.out.println("Saved successfully");
 int sum =0; 
 int average =0;
 int score =0 ;
+
 
 int[][] scoresNumber = new int[studentNumber][studentSubject];
 int[] totalNumber = new int[studentNumber];
@@ -54,6 +55,13 @@ if(score<=0 || score <=20){
 if(score>=21 || score <=50){
  System.out.println("Average STUDENT");
  }
+if(score>=51 || score <=100){
+ System.out.println("BEST STUDENT");
+ }
+System.out.println("==================================================");
+
+System.out.printf("%s%8s%8s%8s%8s%8s%8s%n","STUDENT" , "SUB 1"  ,"SUB 2"  ,"SUB 3","TOT","AVE","POS" );
+System.out.print("===================================================");
 
 }
 }
