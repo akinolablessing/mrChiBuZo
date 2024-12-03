@@ -18,6 +18,10 @@ int reNew =0 ;
 int twoReNew = 0;
 int threeReNew = 0;
 double average=0;
+int sumOne=0;
+int sumTwo = 0;
+int sumThree =0;
+int total =0;
 int[] sNumber = new int[studentNumber];
 
  for(int count = 0; count<sNumber.length; count ++){
@@ -25,7 +29,7 @@ int[] sNumber = new int[studentNumber];
    sNumber[count] = scanner.nextInt();
    reNew =  sNumber[count];
    
-  int sumOne =reNew;
+  sumOne =reNew;
   
  }
  for(int index = 0; index<sNumber.length; index ++){
@@ -33,16 +37,16 @@ int[] sNumber = new int[studentNumber];
    sNumber[index] = scanner.nextInt();
     twoReNew = sNumber[index];
    
-  int sumTwo =twoReNew;
-  //average = (sum+sum/(sNumber.length));
- }
+   sumTwo =twoReNew;
+   }
 for(int three = 0; three<sNumber.length; three ++){
    System.out.print("Scores for third subject:");
    sNumber[three] = scanner.nextInt();
     threeReNew = sNumber[three];
    
-  int sumThree =threeReNew;
-  //average = (sum+sum/(sNumber.length));
+   sumThree =threeReNew;
+  average = (sumOne + sumTwo + sumThree /(sNumber.length));
+  total = (sumOne + sumTwo + sumThree);
  }
 
  for(int i=0; i<=sNumber.length-1; i++){
@@ -50,6 +54,7 @@ for(int three = 0; three<sNumber.length; three ++){
   System.out.println("SUB 2:"+twoReNew);
   System.out.println("SUB 3:"+threeReNew);
   System.out.println("Average :"+average);
+  System.out.println("The total of the score is:"+total);
  }
 }
  }
