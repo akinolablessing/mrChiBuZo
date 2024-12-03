@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 import java.util.Arrays;
 public class StudentGrade{
@@ -9,27 +11,45 @@ int studentNumber = scanner.nextInt();
 
 System.out.print("How many subject do they offer?:");
 int subject = scanner.nextInt();
- 
 
-int[][] sNumber = new int[subject][studentNumber];
+
+ 
+int reNew =0 ;
+int twoReNew = 0;
+int threeReNew = 0;
+double average=0;
+int[] sNumber = new int[studentNumber];
+
  for(int count = 0; count<sNumber.length; count ++){
-   for(int index=0; index<sNumber[count].length; index++){
-  System.out.print("Scores for the student's:");
-   sNumber[count][index] = scanner.nextInt();
-    
-    
+   System.out.print("Score for first subject:");
+   sNumber[count] = scanner.nextInt();
+   reNew =  sNumber[count];
+   
+  int sumOne =reNew;
+  
  }
-  int sum =0;
-  int average = (sum/(sNumber.length));
+ for(int index = 0; index<sNumber.length; index ++){
+   System.out.print("Scores for second subject:");
+   sNumber[index] = scanner.nextInt();
+    twoReNew = sNumber[index];
+   
+  int sumTwo =twoReNew;
+  //average = (sum+sum/(sNumber.length));
  }
+for(int three = 0; three<sNumber.length; three ++){
+   System.out.print("Scores for third subject:");
+   sNumber[three] = scanner.nextInt();
+    threeReNew = sNumber[three];
+   
+  int sumThree =threeReNew;
+  //average = (sum+sum/(sNumber.length));
+ }
+
  for(int i=0; i<=sNumber.length-1; i++){
-  System.out.println("SUB 1:");
-  System.out.println("SUB 2:");
-  System.out.println("SUB 3:");
-  System.out.println("Average :");
-for(int j =0; j<sNumber[i].length-1; j++){
-   System.out.print(sNumber[i][j]+ " ");
-  }
+  System.out.println("SUB 1:"+reNew);
+  System.out.println("SUB 2:"+twoReNew);
+  System.out.println("SUB 3:"+threeReNew);
+  System.out.println("Average :"+average);
  }
 }
  }
