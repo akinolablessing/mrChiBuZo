@@ -21,12 +21,10 @@ int score =0 ;
 
 
 int[][] scoresNumber = new int[studentNumber][studentSubject];
-int[] totalNumber = new int[studentNumber];
-int[] averageNumber = new int[studentNumber];
 
 for(int count=0; count<studentNumber; count++){
  System.out.println("Enter score for student" +(count +1)+ ":");
-  System.out.println("=============================================");
+   System.out.println("=============================================");
 
  for(int index =0; index<studentSubject; index++){
     
@@ -58,10 +56,11 @@ if(score>=21 || score <=50){
 if(score>=51 || score <=100){
  System.out.println("BEST STUDENT");
  }
-System.out.println("==================================================");
+System.out.println("===========================================================");
 
 System.out.printf("%s%8s%8s%8s%8s%8s%8s%n","STUDENT" , "SUB 1"  ,"SUB 2"  ,"SUB 3","TOT","AVE","POS" );
-System.out.print("===================================================");
+System.out.print("==============================================================");
+System.out.printf("%20d%n",score);
 
 }
 }
