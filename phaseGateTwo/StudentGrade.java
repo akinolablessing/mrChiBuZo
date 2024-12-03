@@ -50,6 +50,8 @@ for(int three = 0; three<sNumber.length; three ++){
  }
 
  for(int i=0; i<=sNumber.length-1; i++){
+System.out.println("===================================================");
+  System.out.println("First Student Scores..");
   System.out.println("SUB 1:"+reNew);
   System.out.println("SUB 2:"+twoReNew);
   System.out.println("SUB 3:"+threeReNew);
