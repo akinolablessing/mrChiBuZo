@@ -2,7 +2,7 @@
 // sum/grade[1].length
 import java.util.Scanner;
 import java.util.Arrays;
-public class Correction{
+public class StudentGrade{
  public static void main(String[] args){
  Scanner scanner = new Scanner(System.in);
  
