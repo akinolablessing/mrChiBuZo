@@ -1,5 +1,3 @@
-// I changed the code because is not giving me the result i want sir
-
 import java.util.Scanner;
 import java.util.Arrays;
 public class Correction{
@@ -15,8 +13,8 @@ int studentSubject = scanner.nextInt();
 
  
 int[][] scoresNumber = new int[studentNumber][studentSubject];
-int[] totalNumber = new int[studentNumber];
-int[] averageNumber = new int[studentNumber];
+int[] total = new int[studentNumber];
+int[] average = new int[studentNumber];
 
 for(int count=0; count<studentNumber; count++){
  System.out.println("Enter score for student" +(count +1)+ ":");
@@ -38,3 +36,4 @@ for(int count=0; count<studentNumber; count++){
 }
 
 
+ 
