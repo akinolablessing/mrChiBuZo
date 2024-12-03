@@ -20,6 +20,7 @@ int[] averageNumber = new int[studentNumber];
 
 for(int count=0; count<studentNumber; count++){
  System.out.println("Enter score for student" +(count +1)+ ":");
+  System.out.println("=============================================");
 
  for(int index =0; index<studentSubject; index++){
     int score;
