@@ -1,0 +1,14 @@
+    ~~~PSEUDOCODE~~~
+1)initialize index to be equal to 0
+2)declare noOfStudent
+3)declare score
+4)declare row
+5)declare your string to me =
+6)
+
+
+
+
+
+
+
