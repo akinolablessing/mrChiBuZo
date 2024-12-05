@@ -7,6 +7,18 @@ public class TaskOneMenstralApp{
 public static void main(String[] args){
 Scanner scanner = new Scanner(System.in);
 
+System.out.print(">>Enter your name:");
+String name = scanner.nextLine();
+
+System.out.print("""
+    ~~~~ WELCOME TO MENSTRUAL APP~~~
+       You will have access to see your result on this following::
+      >>SafePeriod
+      >>EndSafePeriod
+      >>Ovulation date
+      >>The date you're starting your next period
+     """);
+System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
  System.out.print("Enter starting date in full:");
  String start = scanner.next();
 
@@ -32,11 +44,17 @@ LocalDate endSafePeriod = endDate.plusDays(6);
 
 LocalDate startNextPeriod = endDate.plusDays(cycle); 
 
+System.out.print("""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""");
+
 System.out.printf("The starting date of your period is: %s%n",startDate);
 System.out.printf("The end date of your period is: %s%n",endDate);
 System.out.printf("Your safe period is: %s to %s%n",safePeriod,endSafePeriod);
 System.out.printf("Your ovulation date is: %s%n",ovulation);
 System.out.printf("You will be starting your next period on: %s%n",startNextPeriod);
-
+  
  }
 } 

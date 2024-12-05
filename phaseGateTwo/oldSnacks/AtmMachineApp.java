@@ -17,6 +17,7 @@ public static void main(String[] args){
     5)Check Account balance
     6)Transfer from one account to another
     7)Change pin
+    0) Go back to menu
       
 """);
 
@@ -24,6 +25,8 @@ public static void main(String[] args){
 
   int menu = scanner.nextInt();
  switch(menu ){
+   case 0:
+   machineMenu();
    case 1:
      
      System.out.print("Enter your first name:");
@@ -34,9 +37,20 @@ public static void main(String[] args){
 
      System.out.print("Enter your pin:");
      int pin = scanner.nextInt();
+   if(pin!=4){
+ }
    break;
    case 2:
-    System.out.print("");
+    System.out.print("""
+       ~~~To close your account fill in the form:::
+
+""");
+    System.out.print("Enter your full name:");
+     String fullName = scanner.next();
+
+   System.out.print("Enter your account number:");
+   long account = scanner.nextLong();
+
   }
  }
 }
