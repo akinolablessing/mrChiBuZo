@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class CheckOutApp{
 
  public static void main(String[] args){
@@ -12,15 +13,25 @@ Scanner scanner = new Scanner(System.in);
   String name = scanner.nextLine();
    }
   public static void backMenu(){
+
+   ArrayList<String> chee = new ArrayList<>();
    Scanner scanner = new Scanner(System.in);
    System.out.print("what did you buy dear:");
   String product = scanner.next();
+   chee.add(product);
+   System.out.print(chee);
 
   System.out.print("How many pieces?:");
-  int pieces = scanner.nextInt();
+  String pieces = scanner.next();
+   chee.add(pieces);
+   System.out.print(chee);
+
   
    System.out.print("How much per unit:");
-  int unit = scanner.nextInt();
+   String unit = scanner.next();
+  chee.add(unit);
+   System.out.print(chee);
+
 
 System.out.print("""
 Add more items?:
@@ -46,13 +57,11 @@ TEL: 03293828343
 Date: 18-Dec-22 8:48:11pm
 """);
 
-System.out.printf("Customer name is:%s%n", name);
-System.out.printf("Cashier name is:%s%n",secondName);
 System.out.println("==============================================================");
 
 
 System.out.printf("%s%8s%8s%15s", "ITEM","QTY","PRICE","TOTAL(NGN)");
-system.out
+
 
 
   }
