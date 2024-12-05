@@ -1,13 +1,13 @@
 import java.util.Scanner;
+
 public class Mbti{
 public static void main(String[] args){
  Scanner scanner = new Scanner(System.in);
 
- int[] numbers = new int[20];
- int[] numbersEI = {1,5,9,13,17};
- int[] numbersSN = {2,6,10,14,18};
- int[] numbersTF = {3,7,11,15,19};
- int[] numbersJP = {4,8,12,16,20};
+ String[] numbersEI =new String[5];
+ String[] numbersSN = new String[5] ;
+ String[] numbersTF =new String[5];
+ String[] numbersJP = new String[5];
 
  String[][] values = {
 {"1. A. Expend energy, enjoy groups \t B.Conserve energy, enjoy one-on-one"},
@@ -52,18 +52,46 @@ public static void main(String[] args){
    };
 
 
+String[] answer =new String[20];
 for(int count=0; count<values.length; count++){
-    System.out.println(values[count][0]);
 
-     
-    System.out.print("Click on 1 for A and 2 for B:");
-     choose[count] = scanner.nextInt();
-     
+for(int index=0; index<values[count].length; index++){
+     System.out.println("Click on A or B:");
+	System.out.println(values[count][index]);
+  	answer[count] = scanner.next();
+    } 
   }
-  System.out.println("Thank you,ss.Here are your answers:");
-  
-  System.out.println("Question ");
 
  
+  numbersEI[0] = answer[0];
+  numbersEI[1] = answer[4];
+  numbersEI[2] = answer[8];
+  numbersEI[3] = answer[12];
+  numbersEI[4] = answer[16];
+
+  numbersSN[0] = answer[1];
+  numbersSN[1] = answer[5];
+  numbersSN[2] = answer[9];
+  numbersSN[3] = answer[13];
+  numbersSN[4] = answer[17];
+ 
+      System.out.println("The result for Question 1,5,9,13,17");
+      System.out.println( numbersEI[0]);
+     System.out.println(  numbersEI[1]);
+      System.out.println( numbersEI[2]);
+        System.out.println( numbersEI[3]);
+          System.out.println(numbersEI[4]);
+
+
+    System.out.println("The result for Question 2,6,10,14,18");
+    System.out.println( numbersSN[0]);
+     System.out.println(  numbersSN[1]);
+      System.out.println( numbersSN[2]);
+        System.out.println( numbersSN[3]);
+          System.out.println(numbersSN[4]);
+
+
+  System.out.println("Thank you,.Here are your answers:");
+  System.out.println("Question ");
  }
 }

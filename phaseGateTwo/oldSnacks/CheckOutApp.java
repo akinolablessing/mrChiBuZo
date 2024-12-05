@@ -44,14 +44,15 @@ MAIN BRANCH
 LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.
 TEL: 03293828343
 Date: 18-Dec-22 8:48:11pm
-Cashier: Ayomide Akinyemi
-Customer Name: Ayo 
-
 """);
+
+System.out.printf("Customer name is:%s%n", name);
+System.out.printf("Cashier name is:%s%n",secondName);
 System.out.println("==============================================================");
 
 
 System.out.printf("%s%8s%8s%15s", "ITEM","QTY","PRICE","TOTAL(NGN)");
+system.out
 
 
   }
