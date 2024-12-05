@@ -74,21 +74,50 @@ for(int index=0; index<values[count].length; index++){
   numbersSN[2] = answer[9];
   numbersSN[3] = answer[13];
   numbersSN[4] = answer[17];
+
+  numbersTF[0] = answer[2];
+  numbersTF[1] = answer[6];
+  numbersTF[2] = answer[10];
+  numbersTF[3] = answer[14];
+  numbersTF[4] = answer[18];
  
+  numbersJP[0] = answer[3];
+  numbersJP[1] = answer[7];
+  numbersJP[2] = answer[11];
+  numbersJP[3] = answer[15];
+  numbersJP[4] = answer[19];
+
       System.out.println("The result for Question 1,5,9,13,17");
       System.out.println( numbersEI[0]);
-     System.out.println(  numbersEI[1]);
-      System.out.println( numbersEI[2]);
-        System.out.println( numbersEI[3]);
-          System.out.println(numbersEI[4]);
+        System.out.println(  numbersEI[1]);
+          System.out.println( numbersEI[2]);
+            System.out.println( numbersEI[3]);
+             System.out.println(numbersEI[4]);
 
 
     System.out.println("The result for Question 2,6,10,14,18");
-    System.out.println( numbersSN[0]);
-     System.out.println(  numbersSN[1]);
-      System.out.println( numbersSN[2]);
-        System.out.println( numbersSN[3]);
-          System.out.println(numbersSN[4]);
+     System.out.println( numbersSN[0]);
+       System.out.println(  numbersSN[1]);
+         System.out.println( numbersSN[2]);
+           System.out.println( numbersSN[3]);
+             System.out.println(numbersSN[4]);
+
+    
+   System.out.println("The result for Question 3,7,11,15,19");
+     System.out.println( numbersTF[0]);
+       System.out.println(  numbersTF[1]);
+         System.out.println( numbersTF[2]);
+           System.out.println( numbersTF[3]);
+             System.out.println(numbersTF[4]);
+
+  System.out.println("The result for Question 4,8,12,16,20");
+     System.out.println( numbersJP[0]);
+       System.out.println(  numbersJP[1]);
+         System.out.println( numbersJP[2]);
+           System.out.println( numbersJP[3]);
+             System.out.println(numbersJP[4]);
+
+
 
 
   System.out.println("Thank you,.Here are your answers:");
