@@ -6,6 +6,7 @@ public static void main(String[] args){
  }
  public static void machineMenu(){
  Scanner scanner = new Scanner(System.in);
+ int pin =0;
  
    System.out.print("""
       ~~~~~~AT(M) Machine App~~~~
@@ -27,7 +28,7 @@ public static void main(String[] args){
  switch(menu ){
    case 0:
    machineMenu();
-  break;
+   break;
    case 1:
      
      System.out.print("Enter your first name:");
@@ -37,7 +38,7 @@ public static void main(String[] args){
      String lName = scanner.next();
 
      System.out.print("Enter your pin:");
-     int  pin = scanner.nextInt();
+       pin = scanner.nextInt();
       break;
 
    case 2:
@@ -52,19 +53,19 @@ public static void main(String[] args){
    long account = scanner.nextLong();
 
    System.out.print(">>>>>>>Your account has been verified");
-
+   break;
    case 3:
-     System.out.print("""
-        ~~~~WELCOME TO WHERE TO DEPOSIT MONEY~~~~
-          
-""");
- System.out.print("Enter your pin:");
-  int num = scanner.nextInt();
-  
-  if(pin==num){
-  System.out.print("Correct pin");
+   deposit();
+   break;
   }
+ }
+public static void deposit(){
+ Scanner scanner = new Scanner(System.in);
+ System.out.print("Enter your pin:");
+ int num = scanner.nextInt();
 
+ if(pin==num){
+   System.out.print("Valid pin.");
   }
  }
 }
